@@ -563,14 +563,10 @@ export default class timePicker extends EventEmitter {
 				if (type.isString(value)) {
 					const times = value.split(' - ');
 					if (times.length) {
-						this.start = dateFns.format(new Date(times[0]), this.format, {
-							locale: this.locale
-						});
+						this.start = new Date(times[0]);
 					}
 					if (times.length === 2) {
-						this.end = dateFns.format(new Date(times[1]), this.format, {
-							locale: this.locale
-						});
+						this.end = new Date(times[1]);
 					}
 				}
 				if (type.isObject(value) || type.isDate(value)) {

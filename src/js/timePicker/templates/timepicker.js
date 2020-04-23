@@ -1,5 +1,4 @@
 export default (data) => {
-  console.log(data);
   return `<div class="timepicker${data.editTimeManually && data.type !== "time" ? ' is-hidden' : ''}">
     <div class="timepicker-start">
       <div class="timepicker-hours">
