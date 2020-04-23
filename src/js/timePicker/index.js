@@ -62,6 +62,7 @@ export default class timePicker extends EventEmitter {
 			locale: this.locale,
 			isRange: this.options.isRange,
 			editTimeManually: this.options.editTimeManually,
+			type: this.options.type,
 			icons: this.options.icons
 		}));
 
