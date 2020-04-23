@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["bulmaCalendar"] = factory();
+		exports["bulmaDatetimerangepicker"] = factory();
 	else
-		root["bulmaCalendar"] = factory();
+		root["bulmaDatetimerangepicker"] = factory();
 })(typeof self !== 'undefined' ? self : this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
